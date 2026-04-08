@@ -19,20 +19,26 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        
       }
 
       body {
         height: 100vh;
+        font-family:sans-serif;
       }
 
       .heading-wrapper{
         display:flex;
         flex-direction: column;
         text-align: center;
-        gap: .5rem;
+        gap: .75rem;
         padding: 2rem 5rem;
       }
 
+      .heading-wrapper p{
+
+        font-size: .9rem;
+      }
 
       .author-info {
         font-size: 14px;
@@ -50,20 +56,37 @@
         display: flex;
         flex-direction: column;
         align-items: center;  
-        background-color: rgb(245, 244, 244);
+        background-color: rgba(245, 244, 244, 0.493);
         padding: 2.5rem 0rem;
       }
 
       .faq-item{
+        width: 65ch;
         display:flex;
         flex-direction: column;
         gap: 1.25rem;
-        padding: 1rem 0rem;
+        padding: 2rem 0rem;
         border-bottom: 1px solid lightgray;
       }
 
-      ol{
+      .faq-item.last{
+
+        border-bottom: none;
+      }
+      a{
+        text-decoration: none;
+        color: rgba(0, 119, 255, 0.61);
+      }
+
+      ol, ul{
+        display:flex;
+        flex-direction: column;
         padding-left: 1rem;
+        gap: .5rem;
+      }
+
+      li{
+        line-height: 1.75;
       }
     </style>
   </head>
@@ -75,22 +98,39 @@
     </div>
 
     <div class="faq-container">
-
       <div class="faq-item">
         <h2>How can I track my order?</h2>
 
         <p>You can track your order using the following steps:</p>
 
         <ol>
-          <li>Go to order <a>Tracking page</a></li>
+          <li>Go to order <a 
+            href="https://www.devchallenges.io?ref=challenge" target="_blank">Tracking page</a>.
+          </li>
           <li>Enter your order number and email adress.</li>
           <li>Click on Track Order button to view the current status of your shipment.</li>
         </ol>
 
-        <p>If you encounter any issues, please visit our <a>Help Center</a></p>
+        <p>If you encounter any issues, please visit our <a 
+          href="https://www.devchallenges.io?ref=challenge" target="_blank">Help Center</a>.</p>
+        </div>
 
-      </div>
-            
+        
+          <div class="faq-item last">
+            <h2>What is your return policy?</h2>
+  
+          <p>We offer a 30-day reutrn policy on most items. Here are some key points:</p>
+  
+          <ul>
+            <li><b>Item must be in original condition</b>: Unworn, unused and unwashed.</li>
+            <li><b>Include original packaging and tags</b>: All items should be returned with their<br/>
+              original packaging and tags.</li>
+            <li><b>Proof of purchase</b>: A recepit or proof of purchase is required.</li>
+          </ul>
+  
+          <p>For more detailed information, read our full <a 
+            href="https://www.devchallenges.io?ref=challenge" target="_blank">Return Policy</a>.</p>
+          </div>
     </div>
 
     <div class="author-info">
